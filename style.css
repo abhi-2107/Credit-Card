@@ -5,22 +5,11 @@
   font-family: 'Ubantu', sans-serif;
 }
 
-/* this is how you can change anatomy of a link  */
-header a {
-  color: black;
-  text-decoration: none;
+body{
+  background-color: black;
+  color: white;
 }
 
-header {
-  height: 74.986px;
-  width: 1154.46px;
-  padding-right: 16px;
-  padding-left: 12px;
-  font-size: 18px;
+header{
   background-color: white;
-  text-align: justify;
-}
-body {
-  background-color: rgb(13, 23, 33);
-  color: white;
 }
