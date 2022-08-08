@@ -4,15 +4,52 @@
   padding: 0;
   font-family: 'Ubantu', sans-serif;
 }
-header{
-  background-color: antiquewhite;
-  box-sizing: border-box;
+nav {
+  background-color: rgb(244, 149, 6);
+  overflow: hidden;
 }
-nav{
-  display: flex ;
+nav a:hover{
+  background-color: black;
+  color: white;
 }
-nav ul{
-  display: flex;
 
+.nav-left ul li{
+  float: left;
+  list-style: none;
 }
-nav ul 
+.nav-left ul a{
+text-decoration: none;
+}
+.nav-right ul li{
+  float: right;
+  list-style: none;
+}
+.nav-left ul a{
+  float: right;
+  list-style: none;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+.nav-right ul a{
+  float: right;
+  list-style: none;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+/* .nav-left ul a:hover{
+  background-color: black;
+  color: white;
+}
+.nav-right ul a:hover{
+  background-color: black;
+  color: white;
+} */
+.home:hover{
+  background-color: aqua;
+}
+.home{
+  padding: 1px 9px; 
+  width: 20px;   
+}
