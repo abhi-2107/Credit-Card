@@ -4,12 +4,15 @@
   padding: 0;
   font-family: 'Ubantu', sans-serif;
 }
-
-body{
-  background-color: rgb(230, 61, 61);
-  color: white;
-}
-
 header{
-  background-color: rgb(253, 238, 238);
+  background-color: antiquewhite;
+  box-sizing: border-box;
 }
+nav{
+  display: flex ;
+}
+nav ul{
+  display: flex;
+
+}
+nav ul 
