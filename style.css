@@ -46,10 +46,12 @@ text-decoration: none;
   background-color: black;
   color: white;
 } */
-.home:hover{
+/* .home:hover{
   background-color: aqua;
 }
 .home{
-  padding: 1px 9px; 
-  width: 20px;   
+  padding: 20px; 
+} */
+.nav-left ul li:first-child{
+  padding: 10px;
 }
