@@ -1,9 +1,17 @@
 .bgsky {
-  background: #BFE1FF;
+  background: #bfe1ff;
 }
 
 .bg-lightpurple {
-  background: #8E7CB5;
+  background: #8e7cb5;
+}
+
+.bg_lightpink {
+  background: #ffe4e7;
+}
+
+.bg_footer {
+  background: #12193B;
 }
 
 .link-white {
@@ -14,6 +22,14 @@
 .h1card {
   width: 40%;
   height: auto;
+}
+
+.bg_accordion {
+  background: #E5E5E5;
+}
+
+.foot_lineheight {
+  line-height: 2.5rem;
 }
 
 @media only screen and (max-width: 576px) {
