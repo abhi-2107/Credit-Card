@@ -32,6 +32,10 @@
   line-height: 2.5rem;
 }
 
+.headingAccor {
+  color: #F2707C;
+}
+
 @media only screen and (max-width: 576px) {
   .text_center_sm {
     text-align: center;
