@@ -32,8 +32,36 @@
   line-height: 2.5rem;
 }
 
-.headingAccor {
+.a {
+  background-color: red;
+}
+
+.btnAcc {
   color: #F2707C;
+}
+
+.bg_verylight_pink {
+  background: #F7F3FF;
+}
+
+.my-show {
+  position: relative;
+}
+
+.place-my-show {
+  position: absolute;
+  bottom: 15px;
+  left: 35%;
+  color: #F7F3FF;
+}
+
+.circle-around-my {
+  display: flex;
+  align-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #F7F3FF;
 }
 
 @media only screen and (max-width: 576px) {
