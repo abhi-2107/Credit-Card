@@ -48,20 +48,39 @@
   position: relative;
 }
 
+.my-show > img {
+  width: 240px;
+  height: auto;
+}
+
 .place-my-show {
   position: absolute;
-  bottom: 15px;
+  bottom: 30px;
   left: 35%;
   color: #F7F3FF;
 }
 
+.place-my-show > p {
+  margin: 0;
+  text-align: start;
+  line-height: 1.3rem;
+}
+
 .circle-around-my {
   display: flex;
-  align-content: center;
-  height: 40px;
-  width: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
   background-color: #F7F3FF;
+  margin-right: 15px;
+}
+
+.myimg {
+  width: 70%;
+  background-color: #F7F3FF;
+  height: auto;
 }
 
 @media only screen and (max-width: 576px) {
