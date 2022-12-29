@@ -10,4 +10,22 @@
  .padding_y_sm{
    padding: 35px 0px;
  }
+.hide_on_sm {
+   display: none;
+}
+
+}
+//for PC
+@media only screen and (min-width: 576px ) {
+.show_on_sm {
+   display: none;   
+}
+// .dropdown_sm > select {
+//    border-radius: 1.375rem;
+// }
+// .dropdown_sm > button {
+//    border-radius: 99px;
+//    border: 2px solid white;
+// }
+
 }

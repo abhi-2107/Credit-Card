@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md mx-md-5 mt-2">
+  <nav class="navbar navbar-expand-md  mx-md-5 mt-2">
     <div class="container-fluid">
       <a href="#" class="text-white bg-dark navbar-brand px-3">AFC inc.</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-drop">
@@ -46,7 +46,7 @@
   </nav>
 
   <main>
-    <div class="mt-5 container-fluid px-md-5 d-md-flex justify-content-between align-items-center margin_bottom_sm">
+    <div class="mt-5  container-fluid px-md-5 d-md-flex justify-content-between align-items-center margin_bottom_sm ">
       <div class="ps-2 text_center_sm">
         <h1>
           Build a Credit Card <br />
@@ -66,7 +66,7 @@
       <div class="container py-md-3">
         <h2>The Freedom to Create <br />The Credit Card You Want</h2>
       </div>
-      <div class="container py-md-3">
+      <div class="container py-md-3 hide_on_sm">
         <p>
           That's why it comes with benefits & rewards chosen by you. Available
           in multiple designs, your card comes in a style selected by you. You
@@ -78,14 +78,36 @@
         </p>
         <a href="#" class="link-white">Get Started ></a>
       </div>
+      <div class="mx-3 show_on_sm">
+        Build your own Credit Card that fits in your day to day lifestyle. First, choose your rewards and then select
+        your card design.
+        <br><br>
+        Check if the card is available in your city
+        <br>
+        <div class="d-flex dropdown_sm mt-2">
+          <select class="form-select " aria-label="Default select example">
+            <option selected>Select City</option>
+            <option value="1">India</option>
+            <option value="2">Australia</option>
+            <option value="3">Japan</option>
+            <option value="3">Italy</option>
+          </select>
+          <button class="btn btn-secondary ms-4">Go</button>
+        </div>
+      </div>
     </section>
     <section class="container-fluid px-0 d-md-flex justify-content-between">
       <div class="container bgsky">
-        <div class="container py-3 w-75 ps-5 pe-3">
+        <div class="container py-3 w-75 ps-5 pe-3 hide_on_sm">
           <input type="phone number" class="form-control ms-md-2 px-3 my-3" placeholder="Enter your phone number" />
           <input type="PAN number" class="form-control ms-md-2 my-5" placeholder="Enter your PAN number" />
           <input type="Address" class="form-control ms-md-2 my-3" placeholder="Enter your Address" />
         </div>
+        <!-- here i need to set the code again  -->
+        <!-- <div>
+          <input type="text" class="" placeholder="Gender">
+          <input type="text" class="" placeholder="Gender">
+        </div> -->
       </div>
       <div class="container align-self-center bg-white px-md-3 mx-md-5">
         <img src="./img/insurance.png" alt="icon1" />
@@ -114,7 +136,7 @@
               <img src="./img/movie_ticket.png" class="img-fluid" alt="movie_ticket for carousel" />
               <div class="place-my-show d-flex  align-items-center">
                 <div class=" circle-around-my ">
-                  <img src="./img/my img pc.png"  class="myimg"  alt="book my show">
+                  <img src="./img/my img pc.png" class="myimg" alt="book my show">
                 </div>
                 <p>Buy 1 Get 1 <br>Movie Tickets</p>
               </div>
@@ -123,9 +145,9 @@
               <img src="./img/window.png" class="img-fluid" alt="window look for movie_ticket" />
               <div class="place-my-show d-flex">
                 <div class="circle-around-my">
-                <img src="./img/my img pc.png" class="myimg"  alt="book my show">
+                  <img src="./img/my img pc.png" class="myimg" alt="book my show">
                 </div>
-                <p>Complimentary  <br>
+                <p>Complimentary <br>
                   Lounge Visit</p>
               </div>
             </div>
@@ -134,15 +156,18 @@
       </div>
     </section>
 
-    <section class="container-fluid bg_verylight_pink d-md-flex justify-content-between py-md-4">
-      <div class="container d-md-flex align-items-md-center justify-content-center">
+    <section class="container-fluid bg_verylight_pink d-md-flex justify-content-between py-md-5">
+      <div class="container d-md-flex align-items-md-center ms-md-5">
         <div class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/card_gray.png" alt="gray card1">
+            <div class="carousel-item active bottom_carousal">
+              <img src="./img/card_purple.png" alt="gray card1">
             </div>
-            <div class="carousel-item ">
+            <div class="carousel-item bottom_carousal">
               <img src="./img/card_gray.png" alt="gray card2">
+            </div>
+            <div class="carousel-item bottom_carousal">
+              <img src="./img/black_card.jpg" alt="gray card2">
             </div>
           </div>
         </div>
@@ -177,7 +202,7 @@
       <div class="accordion accordion-flush" id="accordion-parent">
         <div class="accordion-item">
           <h3 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed"  type="button" data-bs-toggle="collapse"
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               Who’s eligible for the Card?
             </button>
@@ -221,7 +246,10 @@
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordion-parent">
             <div class="accordion-body">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde rem voluptate vel, quis corporis impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, cupiditate eaque ducimus possimus modi nostrum. Modi nemo ut, minima ratione cupiditate sapiente doloribus! Totam, unde asperiores omnis nemo obcaecati esse.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde rem voluptate vel, quis corporis impedit!
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, cupiditate eaque ducimus possimus modi
+              nostrum. Modi nemo ut, minima ratione cupiditate sapiente doloribus! Totam, unde asperiores omnis nemo
+              obcaecati esse.
             </div>
           </div>
         </div>

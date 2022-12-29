@@ -83,6 +83,15 @@
   height: auto;
 }
 
+.accordion-header > button {
+  color: red;
+}
+
+.bottom_carousal > img {
+  width: 450px;
+  height: auto;
+}
+
 @media only screen and (max-width: 576px) {
   .text_center_sm {
     text-align: center;
@@ -93,5 +102,13 @@
   }
   .padding_y_sm {
     padding: 35px 0px;
+  }
+  .hide_on_sm {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .show_on_sm {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
