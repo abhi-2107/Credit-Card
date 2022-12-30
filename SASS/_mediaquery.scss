@@ -4,6 +4,10 @@
     text-align: center;
     margin-bottom: 15px;
  }
+ .margin_x_sm{
+   margin: 0 10%;
+ }
+
  .margin_bottom_sm{
     margin-bottom: 25px;
  }
@@ -12,6 +16,38 @@
  }
 .hide_on_sm {
    display: none;
+}
+
+// not working at all , unable to override some css properties of BS
+.bg_none_sm{
+   background-color: blue!important;
+   font-size: larger;
+}
+.carousal_sm > img{
+   width: 60%;
+   height: auto;
+}
+
+.carousal_card_sm{
+   justify-content: center;
+}
+.carousal_card_sm > img{
+   justify-self: center;
+   width: 80%;
+   height: auto;
+}
+.place-my-show {
+   left: 25%;
+}
+.bg_white_sm {
+   background-color: white;
+}
+
+.bg_purple_sm{
+   background: #7C7EB5;
+}
+.foot_link_sm {
+   margin-left: 10% ;
 }
 
 }
