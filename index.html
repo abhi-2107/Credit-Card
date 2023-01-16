@@ -18,7 +18,11 @@
   <!--BS CSS only -->
   <link rel="stylesheet" href="./NPM/node_modules/bootstrap/dist/css/bootstrap.css" />
   <!-- BS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- slick CDN -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <title>Credit Card__07</title>
 </head>
@@ -87,7 +91,7 @@
         Check if the card is available in your city
         <br>
         <div class="d-flex dropdown_sm mt-2">
-          <select class="form-select"  aria-label="Default select example">
+          <select class="form-select" aria-label="Default select example">
             <option selected>Select City</option>
             <option value="1">India</option>
             <option value="2">Australia</option>
@@ -108,14 +112,14 @@
       </div>
 
       <!-- this block of code  is for mobile view -->
-      <div class="show_on_sm mx-3 my-5" >
-        <h2 >Create your own credit card in three easy steps</h2>
+      <div class="show_on_sm mx-3 my-5">
+        <h2>Create your own credit card in three easy steps</h2>
         <img style="width: 100%;" src="./img/filloptions.png" alt="different options for credit card here">
         <h2 class="mt-3">Fill Eligibility Form</h2>
         <p>
-          Please fill an application form to make sure you’re eligible for the card. You can fill this later as well 
+          Please fill an application form to make sure you’re eligible for the card. You can fill this later as well
         </p>
-        <a href="#" class="link-black">Get Started</a><span style="font-weight:bold ;">  ></span>
+        <a href="#" class="link-black">Get Started</a><span style="font-weight:bold ;"> ></span>
       </div>
 
       <!-- desktop view  -->
@@ -129,8 +133,8 @@
       </div>
     </section>
 
-    <section class="container-fluid bg_lightpink p-md-5 d-md-flex align-items-center justify-content-between bg_white_sm">
-      <div class="container py-md-5 my-md-4 hide_on_sm">
+    <section class="container-fluid bg_lightpink p-md-4 d-md-flex align-items-center  bg_white_sm">
+      <div class=" py-md-5 my-md-4 px-md-5 hide_on_sm w-50">
         <img src="./img/networking.png" alt="simple decorative image" />
         <h2>Choose Your Rewards</h2>
         <p>
@@ -139,8 +143,36 @@
           attached fee. Just add the ones you like to your card.
         </p>
       </div>
-      <div class="container text-center padding_y_sm bg_lightpink">
-        <div class="carousel slide py-md-3" data-bs-ride="carousel">
+      <div class="text-center padding_y_sm bg_lightpink slick1-width style-carousal1-sm">
+
+        <div class="slick-carousal-1 d-flex justify-content-center ">
+          <div class=" my-show carousal_sm">
+            <img src="./img/movie_ticket.png" class="img-fluid" alt="movie_ticket for carousel" />
+            <div class="place-my-show d-flex  align-items-center">
+              <div class=" circle-around-my ">
+                <img src="./img/my img pc.png" class="myimg" alt="book my show">
+              </div>
+              <p>Buy 1 Get 1 <br>Movie Tickets</p>
+            </div>
+          </div>
+          <div class=" my-show text-center carousal_sm">
+            <img src="./img/window.png" class="img-fluid" alt="window look for movie_ticket" />
+            <div class="place-my-show d-flex align-items-center">
+              <div class="circle-around-my">
+                <img src="./img/my img pc.png" class="myimg" alt="book my show">
+              </div>
+              <p>Complimentary <br>
+                Lounge Visit</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- old working carousal -->
+        <!-- <div class="carousel slide py-md-3" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active my-show carousal_sm">
               <img src="./img/movie_ticket.png" class="img-fluid" alt="movie_ticket for carousel" />
@@ -162,24 +194,50 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+
       </div>
 
       <!-- this is for mobile view  -->
       <div class="show_on_sm mb-5">
         <h2 class="mt-3">Choose Your Rewards</h2>
         <p>
-          Choose rewards from brands and categories that fit in with your personality. Your card’s annual fee will based on the rewards you select.  
+          Choose rewards from brands and categories that fit in with your personality. Your card’s annual fee will based
+          on the rewards you select.
         </p>
-        <a href="#" class="link-black">Get Started</a><span style="font-weight:bold ;">  ></span>
+        <a href="#" class="link-black">Get Started</a><span style="font-weight:bold ;"> ></span>
       </div>
 
     </section>
 
-    <section class="container-fluid bg_verylight_pink d-md-flex justify-content-between py-md-5 bg_white_sm">
-      <div class="container bg_verylight_pink d-md-flex align-items-md-center ms-md-5">
-        <div class="carousel slide padding_y_sm" data-bs-ride="carousel">
-          <div class="carousel-inner margin_x_sm">
+    <!-- slick carousal , trying to fix width issue/ bug -->
+    <!-- <section class="slick-item-box">
+      <div class="test" style="width: 50%; float: left;">
+        <div class="bottom_carousal">
+          <img src="./img/card_purple.png" alt="card_purple">
+        </div>
+        <div class="bottom_carousal">
+          <img src="./img/card_gray.png" alt="card_gray">
+        </div>
+        <div class="bottom_carousal">
+          <img src="./img/black_card.jpg" alt="gray card2">
+        </div>
+      </div>
+      <div class=" hide_on_sm">
+        <img src="./img/paint-roller.png" alt="paint roller image">
+        <h2>Select Your Style</h2>
+        <p>Match your card to your personality. Whether you like a minimal look or something that catches everyone’s
+          eyes, we’ve got a style for you. You can update your style every year, for a small fee </p>
+      </div>
+
+    </section> -->
+
+
+
+    <section class="container-fluid  d-md-flex justify-content-between py-md-3 bg_verylight_pink bg_white_sm">
+      <div class="container  d-md-flex align-items-md-center  ">
+        <!-- <div class="carousel slide padding_y_sm" data-bs-ride="carousel "> -->
+        <!-- <div class="carousel-inner margin_x_sm">
             <div class="carousel-item active bottom_carousal carousal_card_sm">
               <img src="./img/card_purple.png" alt="gray card1">
             </div>
@@ -189,37 +247,103 @@
             <div class="carousel-item bottom_carousal carousal_card_sm">
               <img src="./img/black_card.jpg" alt="gray card2">
             </div>
+          </div> -->
+
+        <!-- these are slick working carousal  -->
+        <!-- <div class="slick-carousal-2  me-md-5 pb-md-5 carousal2 bg_verylight_pink"  >
+          <div class="bottom_carousal">
+            <img src="./img/card_purple.png" alt="card_purple">
+          </div>
+          <div class="bottom_carousal">
+            <img src="./img/card_gray.png" alt="card_gray">
+          </div>
+          <div class="bottom_carousal">
+            <img src="./img/black_card.jpg" alt="gray card2">
+          </div>
+        </div> -->
+
+        <!-- this changes the background of card on every click -->
+        <div class="card-with-colors">
+          <div id="card-color">
+              
+            <img src="./img/sim-chip.png" alt="sim-chip" class="sim-chip">
+            <p>ANISH KUMAR</p>
+              <h4> <pre>5675  2154  9500  0786</pre></h4>
+              
+              <img class="mastercard-logo" src="./img/mastercard-logo.png" alt=" mastercard-logo">
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+            <div id="red" class="item-card-color">
+              <!-- <img src="./img/card-color1.png" alt="card-color1-gray"> -->
+            </div>
+            <div id="green" class="item-card-color">
+              <!-- <img src="./img/card-color2.png" alt="card-color-2"> -->
+            </div>
+            <div id="blue" class="item-card-color">
+              <!-- <img src="./img/card -color3.png" alt="card-color-3"> -->
+            </div>
+            <div id="purple" class="item-card-color">
+              <img src="./img/card-color-4.png" alt="card-color-4">
+            </div>
           </div>
         </div>
+
+        <!-- desktop view  -->
+        <div class="container py-md-5 px-md-4 ps-md-5 hide_on_sm">
+          <img src="./img/paint-roller.png" alt="paint roller image">
+          <h2>Select Your Style</h2>
+          <p>Match your card to your personality. Whether you like a minimal look or something that catches everyone’s
+            eyes, we’ve got a style for you. You can update your style every year, for a small fee </p>
+        </div>
+
       </div>
 
-      <!-- desktop view  -->
-      <div class="container py-md-5 px-md-4 pe-md-5 hide_on_sm">
-        <img src="./img/paint-roller.png" alt="paint roller image">
-        <h2>Select Your Style</h2>
-        <p>Match your card to your personality. Whether you like a minimal look or something that catches everyone’s
-          eyes, we’ve got a style for you. You can update your style every year, for a small fee </p>
-      </div>
+      <!-- </div> -->
 
-      
+
     </section>
-    <!-- this is for mobile view  -->
-      <div class="show_on_sm mb-5 mx-3">
-        <h2 class="mt-3">Choose Your Rewards</h2>
-        <p>
-          Choose rewards from brands and categories that fit in with your personality. Your card’s annual fee will based on the rewards you select.  
-        </p>
-        <a href="#" class="link-black">Get Started</a><span style="font-weight:bold ;">  ></span>
-      </div>
 
-      <div class="show_on_sm mb-5  px-3 py-3 text-white bg_purple_sm">
-        <h2 class="my-3">Why the OneSync Card is the Best Choice for you?</h2>
-        <p>
-          You can create a Credit Card that fits all your needs on your own. Gone are the days when you had choose from premade credit cards with features that you did not need.  
-        </p>
-        <p>With the OneSync card you can save on all the things that you love to do with a unique personal touch </p>
-        <a href="#" class="link-white">Get Started</a><span style="font-weight:bold ;">  ></span>
+    <!-- <div class="test">
+      <div class="bottom_carousal">
+        <img src="./img/card_purple.png" alt="card_purple">
       </div>
+      <div class="bottom_carousal">
+        <img src="./img/card_gray.png" alt="card_gray">
+      </div>
+      <div class="bottom_carousal">
+        <img src="./img/black_card.jpg" alt="gray card2">
+      </div>
+    </div> -->
+    <!-- </div> -->
+
+
+
+
+    <!-- this is for mobile view  -->
+    <div class="show_on_sm  mb-5 mx-3">
+      <h2 class="">Select Your Style</h2>
+      <p>
+        Whether you like a minimal look or something that catches everyone’s eyes. We have a Card design for you
+      </p>
+      <a href="#" class="link-black">Get Started</a><span style="font-weight:bold ;"> ></span>
+    </div>
+
+    <div class="show_on_sm mb-5  px-3 py-3 text-white bg_purple_sm">
+      <h2 class="my-3">Why the OneSync Card is the Best Choice for you?</h2>
+      <p>
+        You can create a Credit Card that fits all your needs on your own. Gone are the days when you had choose from
+        premade credit cards with features that you did not need.
+      </p>
+      <p>With the OneSync card you can save on all the things that you love to do with a unique personal touch </p>
+      <a href="#" class="link-white">Get Started</a><span style="font-weight:bold ;"> ></span>
+    </div>
+
+
+
+
+
+
+
 
     <section class="container px-md-5 py-md-5 margin_bottom_sm">
       <h2 class="text-center ">FAQs</h2>
@@ -337,7 +461,23 @@
   <script src="./NPM/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
   <!-- BS CDN java script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+  <!-- JQuery CDN for slick carousal -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!-- slick CDN js -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- local script for slick carousal to work -->
+  <script src="./slick-carousal.js"></script>
+
+  <!-- local script for card-colors , click and change color  -->
+  <script src="./card-colors.js"></script>
 </body>
 
 </html>

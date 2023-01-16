@@ -53,6 +53,9 @@
 }
 .my-show{
   position: relative;
+  // margin: 0;
+  display: inline-block;
+  margin: 0 20px;
 }
 .my-show > img {
   width: 240px;
@@ -63,7 +66,7 @@
 .place-my-show{
   position: absolute;
   bottom: 30px;
-  left: 35%;
+  left: 30px;
   color: #F7F3FF;
   // border: 2px solid white;
 
@@ -105,6 +108,104 @@
   color: red;
 }
 .bottom_carousal > img{
-  width: 450px;
+  width: 350px;
   height: auto;
+  margin: 0 10px;
 }
+.slick-carousal-1{
+  width: 85%;
+  margin: 0 auto;
+  float: right;
+}
+.slick1-width {
+  width: 420px;
+}
+
+// .slick-item-box{
+// display: inline-flex;
+
+// }
+
+.carousal2{
+  width: 50%;
+  float: left;
+}
+
+
+// styles of last card which changes color of card on click
+.card-with-colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 130px;
+}
+
+
+#card-color {
+  width: 320px;
+  height: 200px;
+  margin: 40px 0px;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.sim-chip {
+position: absolute;
+top: 55px;
+left: 20px;
+}
+#card-color > h4 {
+  position: absolute;
+  bottom: 45px;
+  font-weight: bold;
+  left: 20px;
+  -webkit-text-stroke: 1px black;
+}
+
+#card-color > p {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  letter-spacing: 2px;
+}
+
+
+.mastercard-logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+  right: 25px;
+}
+
+
+.item-card-color {
+  width: 68px;
+  height: 40px;
+  border-radius: 3px;
+  //  border: 2px solid; 
+  // margin: 0px 0px;
+}
+.item-card-color:hover {
+  border: 1px solid gray;
+  box-shadow: 2px 4px 11px
+}
+
+#green{
+  background: linear-gradient(217deg, rgba(20,0,0,.8), rgba(25,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(65,30,10,.8), rgba(15,30,10,0) 70.71%),
+  linear-gradient(336deg, rgba(10,0,25,.8), rgba(10,0,25,0) 70.71%);
+
+}
+#red{
+  background: repeating-radial-gradient(circle at 0%, #113, #333 80px, #eee 70px, #eee 70px);
+
+}
+#blue{
+  background: linear-gradient(0.12turn, #0a58ca, #212529, #373b3e);
+}
+// #purple{
+//   background-color: purple;
+// }
